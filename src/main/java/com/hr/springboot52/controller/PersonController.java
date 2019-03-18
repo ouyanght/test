@@ -14,6 +14,7 @@ public class PersonController {
 
     @RequestMapping("/findAll")
     public ModelAndView findAll(){
+        System.out.println("测试git");
         ModelAndView mv = new ModelAndView("/person/list");
         mv.addObject("personList",personService.findAll());
         return  mv;
